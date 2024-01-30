@@ -1,0 +1,24 @@
+body {
+  font-family: 'Junge', cursive;
+  
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #212121;
+}
+
+.option {
+background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+  border: 4px solid rgb(0, 0, 0);
+}
+
+.container {
+  max-width: 54rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
