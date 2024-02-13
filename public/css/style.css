@@ -1,13 +1,26 @@
 body {
   font-family: 'Junge', cursive;
-  
   font-size: 1.2rem;
   color: #ffffff;
   background-color: #212121;
+  margin: auto;
+  padding: 10px;
+}
+
+.username {
+    width: 400px;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+
+.brand {
+  color: white;
+  background-color: black;
+  padding: 0.4rem;
 }
 
 .option {
-background-color: #ffffff;
+  background-color: #ffffff;
 }
 
 img {
@@ -21,4 +34,31 @@ img {
   margin-right: auto;
   padding-left: 1rem;
   padding-right: 1rem;
+}
+
+:root {
+  --sidebar-width: 20rem;
+  --container-width: 36rem;
+  --font-body: sans-serif;
+}
+
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: row-reverse; */
+  gap: 1rem;
+}
+
+.sidebar {
+  /* ↓ The width when the sidebar _is_ a sidebar */
+  flex-basis: var(--sidebar-width);
+  flex-grow: 1;
+}
+
+.not-sidebar {
+  /* ↓ Grow from nothing */
+  flex-basis: 0;
+  flex-grow: 999;
+  /* ↓ Wrap when the elements are of equal width */
+  min-inline-size: 50%;
 }

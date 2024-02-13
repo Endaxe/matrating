@@ -1,7 +1,32 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-<main class="wrapper">
-  <h1>{{ title }} Mat rating</h1>
-</main>
-{% endblock %}
+
+
+<body class="with-sidebar">
+  <nav class="sidebar navbar region flow">
+    <h1 class="brand">Restaurant Fork & Spoon</h1>
+    <img src="/css/restau.png" alt="Restaurant logo image">
+    <p>At Fork and Spoon, every detail is meticulously crafted to create an unforgettable dining experience. From the
+      sleek, contemporary design to the impeccable service, diners are treated to a feast for the senses. The menu is a
+      celebration of diverse culinary influences, blending traditional techniques with innovative twists.</p>
+  </nav>
+  <main class="not-sidebar region flow">
+    <header class="container flow">
+      <h1>Mat recensioner</h1>
+
+
+
+      <form action="/username" method="post">
+        <label for="username"></label>
+        <input type="text" id="username" name="username" placeholder="Share your taste experience">
+        <input type="submit" value="submit">
+
+
+    </header>
+    <article class="container flow">
+      <h2>Comments:</h2>
+      <img src="/css/svamppast.jpg" alt="mushrom">
+      <p>"The mushroom pasta at Fork and Spoon is an absolute delight for the senses. 
+        This dish is a masterful combination of earthy flavors and comforting textures that leaves a lasting impression." </p>
+      {% endblock %}
