@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+ 
+  <body class="with-sidebar">
+    <nav class="sidebar navbar region flow">
+      <img src="/css/restau.png" alt="Restaurant logo image">
+
+      <main class="not-sidebar region flow">
+        <header class="container flow">
+          <h1>Food reviews</h1>
+    
+          <p>Jag kan nu byta namn på min route till /cats för att visa en lista på alla katter.</p>
+          <p>Nästa steg blir sedan att göra sidor för varje enskild katt.</p>
+          <p>Jag vill <a href="/cats/new">registrera min katt.</a></p>
+          <ul class="catlist">
+              {% for cat in cats %}
+              <li><a href="/cats/{{cat.id}}">{{ cat.name }}</a><a href="/cats/{{ cat.id }}/delete">Ta bort katt</a></li>
+              {% endfor %}
+            </ul>
+        </header>
+</main>
+{% endblock %}
