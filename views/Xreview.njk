@@ -1,0 +1,23 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<main class = "wrapper"> 
+    <h1>Write a review</h1>
+
+<form action="/newreview" method="post">
+    <label for="dish">dish</label>
+    <input type="text" id="dish" name="dish" required>
+    <label for="">description</label>
+    <textarea
+    name="description" 
+    id="description"
+    cols="30"
+    rows="10"></textarea>
+
+    <input type="submit" value="submit review"> </form>
+ 
+</form>
+</main>
+
+{% endblock %}

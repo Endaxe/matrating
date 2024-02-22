@@ -44,6 +44,24 @@ router.get('/review/:id', async (req, res) => {
       res.sendStatus(500)
 
     }
-  
 })
+
+router.get('/newreview', function (req, res) {
+  res.render('Xreview.njk', {title: 'new review'})
+})
+
+router.post('/newreview', async function(req, res) {
+  //console.log(req.body)
+  //plocka ut värdena vi ska ha
+  //använda name/id från inputfälten
+  const dish = req.body.dish
+  const description = req.body.description
+  console.log(dish, description)
+  //säkerheten, vad har vi för data??
+  //INSERT INTO `endo_dish_score` (`title`, `text`) VALUES
+  //('Korv', 'glizzzyy');
+
+  res.json(req.body)
+})
+
 module.exports = router
