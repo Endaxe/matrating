@@ -6,9 +6,11 @@
     <h1>Write a review</h1>
 
 <form action="/newreview" method="post">
-    <label for="dish">dish</label>
+    <label for="dish">Dish</label>
     <input type="text" id="dish" name="dish" required>
-    <label for="">description</label>
+    <label for="">Score (1-10)</label>
+    <input type="text" id="score" name="score" required>
+    <label for="">Description</label>
     <textarea
     name="description" 
     id="description"

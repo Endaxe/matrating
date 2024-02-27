@@ -7,6 +7,22 @@ body {
   padding: 10px;
 }
 
+.wrapper {
+  max-width: 52rem;
+  margin-inline: auto;
+  padding: 1rem;
+}
+
+.reviewlist {
+  list-style: none;
+  padding: 0;
+}
+
+.reviewlist li {
+  display: flex;
+  justify-content: space-between;
+}
+
 .button {
   background-color: #2a2a2a; /* Green */
   border: 2px solid rgb(0, 0, 0);
